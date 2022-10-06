@@ -1,6 +1,6 @@
 /* [Yi Zhao]
  * [Class INFO5101]
- * [Assignment2]
+ * [Assignment3]
  * [Section8]
  * [NUID:002103352]
  * Description:This is the third assignment, which is used to calculate the sum of the eight grades 
