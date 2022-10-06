@@ -1,3 +1,10 @@
+/* [Yi Zhao]
+ * [Class INFO5101]
+ * [Assignment4]
+ * [Section8]
+ * [NUID:002103352]
+ */
+
 package Assignment4;
 
 import java.util.Scanner;
