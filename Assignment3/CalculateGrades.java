@@ -1,7 +1,7 @@
 
 /* [Yi Zhao]
  * [Class INFO5101]
- * [Assignment2]
+ * [Assignment3]
  * [Section8]
  * [NUID:002103352]
  */
