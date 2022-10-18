@@ -26,6 +26,8 @@ public class extendWeightedGrade {
 		System.out.print("Please input the total Point:"+"\n");
 		while(true){
 			int totalPoint = s.nextInt();
+			if(totalPoint==0) 
+				System.out.println("Error, total Point cannot be 0, Please end the program and run it again");
 			if (totalPoint == -1) break;
 			c.t_point(totalPoint);
 			//System.out.print(c.e_point(totalPoint));
