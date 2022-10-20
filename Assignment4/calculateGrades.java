@@ -13,19 +13,20 @@ public class calculateGrades {
 	private LinkedList<Integer> e_point = new LinkedList<Integer>();
 	private LinkedList<Integer> t_point = new LinkedList<Integer>();
 	private LinkedList<Integer> p = new LinkedList<Integer>();
+	private double sum=0;
 
 	//Add data to a linkedlist
-	public void e_point(int a) {
+	public void setE_point(int a) {
 		e_point.add(a);
 		//return e_point;
 	}
 	
-	public void t_point(int b) {
+	public void setT_point(int b) {
 		t_point.add(b);
 		//return t_point;
 	}
 	
-	public void percent(int c) {
+	public void setPercent(int c) {
 		p.add(c);
 		//return p;
 	}
@@ -33,12 +34,14 @@ public class calculateGrades {
 	//calculate grades
 	public double calGrade() {
 		// TODO Auto-generated method stub
-		double sum =0;
+		
 		for(int i=0; i<e_point.size();i++) {
 		double grade=(double)e_point.get(i)/t_point.get(i)*p.get(i);
 		//System.out.println(grade);
 		sum += grade;
+		
 		}
+		System.out.print(sum);
 		return sum;
 	}
 
@@ -52,4 +55,15 @@ public class calculateGrades {
 		System.out.print(finalresult);
 		return finalresult;		
 	}
+	
+	public LinkedList<Integer> getT_point(){
+	    return t_point;
+	}
+	public LinkedList<Integer> getE_point(){
+	    return e_point;
+	}
+	public double getPercent(){
+	    return sum;
+	}
+	
 }
