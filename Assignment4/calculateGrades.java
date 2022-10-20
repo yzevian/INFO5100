@@ -1,9 +1,3 @@
-/* [Yi Zhao]
- * [Class INFO5101]
- * [Assignment4]
- * [Section8]
- * [NUID:002103352]
- */
 package Assignment4;
 
 import java.util.LinkedList;
@@ -41,7 +35,7 @@ public class calculateGrades {
 		sum += grade;
 		
 		}
-		System.out.print(sum);
+		//System.out.print(sum);
 		return sum;
 	}
 
@@ -52,7 +46,7 @@ public class calculateGrades {
 		else if(sum>=70 && sum<80) {finalresult ="C";}
 		else if(sum>=60 && sum<70) { finalresult ="D";}
 		else {finalresult ="F";}
-		System.out.print(finalresult);
+		//System.out.print(finalresult);
 		return finalresult;		
 	}
 	
