@@ -43,7 +43,9 @@ public class extendWeightedGrade {
 		
 		
 		double g=c.calGrade();
-		c.calculateGrades(g);
+		String l=c.calculateGrades(g);
+		
+		System.out.println("The total grade is: "+ g + " which is "+l);
 		    	
 	}
 }
