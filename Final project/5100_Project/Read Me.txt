@@ -1,0 +1,11 @@
+1. This is a car rent application. It is created by Java + Mysql.
+The jre version is "17.0.5”, and the Mysql version is 8.0.23.
+
+2. You can use the following information to log in：
+User Name : User1
+Password : 1234678
+
+3.To open the database locally: Open the workbench, first create a new database, 
+then click Import file. Import the sql file and refresh the database.
+
+4.If you have any difficulities to check it, please contact me. Thank you
