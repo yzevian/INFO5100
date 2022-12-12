@@ -12,6 +12,7 @@ import javax.swing.JButton;
 import javax.swing.JInternalFrame;
 import javax.swing.JLabel;
 import javax.swing.JList;
+import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import javax.swing.JScrollPane;
 import javax.swing.JTabbedPane;
@@ -202,17 +203,24 @@ public class searchCars extends JInternalFrame {
 				String color = lblNewLabel_5.getText();
 				String price = lblNewLabel_6.getText();
 				String type = lblNewLabel_7.getText();	
-				newRe nr = new newRe(id,brand, color, price, type);
-				newReservations rental = new newReservations();
-				rental.textField_1.setText(brand);
-				rental.textField_3.setText(price);
-				rental.textField_4.setText(type);
-				rental.textField_5.setText(color);
-				rental.textField_6.setText(id);
-				rental.setVisible(true);
+				if(id == "") {
+					JOptionPane.showMessageDialog(null, "Please select a car first!");
+					return;
+								
+				}else {
+					newRe nr = new newRe(id,brand, color, price, type);
+					newReservations rental = new newReservations();
+					rental.textField_1.setText(brand);
+					rental.textField_3.setText(price);
+					rental.textField_4.setText(type);
+					rental.textField_5.setText(color);
+					rental.textField_6.setText(id);
+					rental.setVisible(true);
+					
+					rental.setLocationRelativeTo(null);
+					rental.setAlwaysOnTop( true );	
+				}
 				
-				rental.setLocationRelativeTo(null);
-				rental.setAlwaysOnTop( true );
 			}
 		});
 		btnNewButton.setBounds(450, 368, 117, 29);

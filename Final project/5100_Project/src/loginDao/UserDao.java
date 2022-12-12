@@ -49,7 +49,7 @@ public class UserDao {
 	        }
 	        try {
 				conData.closeCon(cn);
-				//System.out.println("数据库断开连接！");
+				System.out.println("数据库断开连接！");
 			} catch (Exception e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();

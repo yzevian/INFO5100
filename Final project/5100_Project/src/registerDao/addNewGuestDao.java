@@ -19,7 +19,7 @@ public class addNewGuestDao {
 		//添加用户		
 	    int n=0;
 	    
-	    String sql="insert into GuestTable (DL_number,Guest_Name,User_Name,Password,Age) values(?,?,?,?,?)";
+	    String sql="insert into GuestTable (DL_number,Guest_Name,User_Name,Password,Age, gender) values(?,?,?,?,?,?)";
   
 	    try {
 			cn=conData.getCon();
@@ -36,6 +36,7 @@ public class addNewGuestDao {
             ps.setString(3, userName);
             ps.setString(4, password);
             ps.setString(5, age);
+            ps.setString(6, age);
             
             n= ps.executeUpdate();
             if(n>0) {
