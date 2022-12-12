@@ -19,7 +19,7 @@ public class addNewGuestDao {
 		//添加用户		
 	    int n=0;
 	    
-	    String sql="insert into GuestTable (DL_number,Guset_Name,User_Name,Password,Age) values(?,?,?,?,?)";
+	    String sql="insert into GuestTable (DL_number,Guest_Name,User_Name,Password,Age) values(?,?,?,?,?)";
   
 	    try {
 			cn=conData.getCon();
