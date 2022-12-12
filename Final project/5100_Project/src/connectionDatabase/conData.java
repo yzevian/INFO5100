@@ -10,10 +10,10 @@ import java.sql.Statement;
 import java.util.ArrayList;  
 
 public class conData {
-	private static String dbUrl="jdbc:mysql://localhost:3306/CarRental?useSSL=false&serverTimezone=UTC"; // 数据库连接地址
-	private static String dbUserName="root"; // 用户名
-	private static String dbPassword="00000000"; // 密码
-	private static String jdbcName="com.mysql.cj.jdbc.Driver"; // 驱动名称
+	private static String dbUrl="jdbc:mysql://localhost:3306/CarRental?useSSL=false&serverTimezone=UTC"; // database connect address
+	private static String dbUserName="root"; // database user Name
+	private static String dbPassword="00000000"; // password
+	private static String jdbcName="com.mysql.cj.jdbc.Driver"; // driver Name
 	static Connection con= null;
 
 	/**
@@ -76,7 +76,7 @@ public class conData {
 		/*if(dbUtil != null) {
 			try {
 				dbUtil.closeCon(con);
-				System.out.println("数据库断开连接！");
+				System.out.println("DataBase close！");
 			} catch (Exception e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
