@@ -207,13 +207,13 @@ public class updateProfile extends JInternalFrame {
 			
             if(up.upInfo(guest, Number,user,pass,age,gender))
             {
-           	 JOptionPane.showMessageDialog(null, "修改成功！");
+           	 JOptionPane.showMessageDialog(null, "Sucess！");
            	 dispose();
            	 new menu().setVisible(true);	
             }
             else
             {
-                JOptionPane.showMessageDialog(null, "修改失败");
+                JOptionPane.showMessageDialog(null, "Error!");
             }
 			
 		} catch (Exception e1) {
